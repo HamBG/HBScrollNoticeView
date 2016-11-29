@@ -1,7 +1,15 @@
 # ZHScrollNoticeView
 Contain Horizontal scroll bar and Vertical scroll bar. 
 
+- ZHNoticeHeadLine is a Vertical scrolling bar.
+- ZHNoticeMarquee is a Horizontal scrolling bar.
+
+#Description
+- messageArray is Class of NSArray, is the dataSource to ZHNoticeHeadLine.
+- getSeparatedLinesFromString: a method for transform NSString to NSArray.
+
 #How to Use
+
 ```
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -22,3 +30,4 @@ ZHNoticeMarquee *mar = [[ZHNoticeMarquee alloc]initWithFrame:CGRectMake(0, 200, 
 
 }
 ```
+
