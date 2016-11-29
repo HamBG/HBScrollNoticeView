@@ -31,3 +31,7 @@ ZHNoticeMarquee *mar = [[ZHNoticeMarquee alloc]initWithFrame:CGRectMake(0, 200, 
 }
 ```
 
+As you know, it is easy to use. Just Clone or DownLoad the project source.Then,import the files into your own project.Finally,using it like above!
+
+#Final
+Have fun~
