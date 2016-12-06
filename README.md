@@ -1,11 +1,11 @@
-# ZHScrollNoticeView
+# HBScrollNoticeView
 Contain Horizontal scroll bar and Vertical scroll bar. 
 
-- ZHNoticeHeadLine is a Vertical scrolling bar.
-- ZHNoticeMarquee is a Horizontal scrolling bar.
+- HBNoticeHeadLine is a Vertical scrolling bar.
+- HBNoticeMarquee is a Horizontal scrolling bar.
 
 #Description
-- messageArray is Class of NSArray, is the dataSource to ZHNoticeHeadLine.
+- messageArray is Class of NSArray, is the dataSource to HBNoticeHeadLine.
 - getSeparatedLinesFromString: a method for transform NSString to NSArray.
 
 #How to Use
@@ -13,7 +13,7 @@ Contain Horizontal scroll bar and Vertical scroll bar.
 ```
 - (void)viewWillAppear:(BOOL)animated
 {
-ZHNoticeHeadLine *noticeLine = [[ZHNoticeHeadLine alloc]initWithFrame:CGRectMake(0, 100, DEVICE_WIDTH, 35)];
+HBNoticeHeadLine *noticeLine = [[HBNoticeHeadLine alloc]initWithFrame:CGRectMake(0, 100, DEVICE_WIDTH, 35)];
 [noticeLine setBgColor:[UIColor grayColor] textColor:[UIColor whiteColor] textFont:[UIFont systemFontOfSize:14.0]];
 [noticeLine setImage:@"speaker.png" frame:CGRectMake(10, 7, 20, 20)];
 [noticeLine setScrollDuration:1.0 stayDuration:3.0];
@@ -22,7 +22,7 @@ noticeLine.messageArray = [noticeLine getSeparatedLinesFromString:DATASTRING fon
 [self.view addSubview:noticeLine];
 [noticeLine start];
 
-ZHNoticeMarquee *mar = [[ZHNoticeMarquee alloc]initWithFrame:CGRectMake(0, 200, DEVICE_WIDTH, 35) speed:4 Msg:DATASTRING bgColor:[UIColor greenColor] txtColor:[UIColor blackColor]];
+HBNoticeMarquee *mar = [[HBNoticeMarquee alloc]initWithFrame:CGRectMake(0, 200, DEVICE_WIDTH, 35) speed:4 Msg:DATASTRING bgColor:[UIColor greenColor] txtColor:[UIColor blackColor]];
 [mar changeMarqueeLabelFont:[UIFont systemFontOfSize:20.0f]];
 
 [self.view addSubview:mar];
